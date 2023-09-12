@@ -14,13 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $students = [
-        'Marco',
-        'Gino',
-        'Claudia',
-    ];
+    $comics = config('comics');
 
-    $data = compact('students');
+    $data = compact('comics');
 
     // dd($data);
 
